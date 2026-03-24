@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Cards.jsx";
-import { cuartetoCanciones, brunoCanciones, moratCanciones } from "../Canciones";
+import { cuartetoCanciones, brunoCanciones, moratCanciones } from "../datos/Canciones";
 
 const Home = () => {
     return(

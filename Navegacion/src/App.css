@@ -77,7 +77,7 @@ main{
 
 /* Aqui el primer elemento es el contenedor padre, si este tiene un li que es el ultimo hijo en hover, todos los li crencen*/
 .NavDiv:has(li:last-child:hover) li{
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .NavDiv li:hover a {
@@ -144,7 +144,7 @@ main{
   opacity: 0.5;
 }
 
-/*Si no hay ninguna card en hove, las cartas que no estan en hover se ponen grises*/
+/*Si no hay ninguna card en hover, las cartas que no estan en hover se ponen grises*/
 main:not(.Card:hover) .Card:not(:hover){
   filter: saturate(0%);
   transition: 0.5s;
@@ -160,4 +160,86 @@ main:has(.Card:hover) .Card:not(:hover){
 .Card:hover{
   filter: saturate(100%);
   transition: 0.5s;
+}
+
+.perfil{
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+
+.me{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gustos{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin: 0 1rem;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.jjk{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.Hechiceros{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.Hechiceros img{
+  width: 550px;
+  filter: saturate(0%);
+  transition: filter 0.3s ease;
+}
+
+.Hechiceros img:hover{
+  animation: laBatallaDecisiva 0.6s ease forwards;
+}
+
+@keyframes laBatallaDecisiva{
+    0% {
+      filter: saturate(100%);
+    }
+    10% {
+      filter: saturate(200%);
+    }
+    20% {
+      filter: saturate(250%);
+    }
+    30% {  
+      filter: saturate(300%);
+    }
+    40% {
+      filter: saturate(300%);
+    }
+    50% {
+      filter: saturate(300%);
+    }
+    /* Se apaga gradualmente */
+    80% {
+      filter: saturate(150%);
+    }
+    100% {
+      filter: saturate(100%);
+    }
 }
