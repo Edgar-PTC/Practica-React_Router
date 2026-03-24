@@ -1,0 +1,32 @@
+export const cuartetoCanciones = [
+    { id: 1, name: "El Hijo de Hernández", enlace: "/cancion/cuarteto/1" },
+    { id: 2, name: "Ya No Sé Qué Hacer Conmigo", enlace: "/cancion/cuarteto/2" },
+    { id: 3, name: "Lo Malo de Ser Bueno", enlace: "/cancion/cuarteto/3" },
+    { id: 4, name: "Enamorado Tuyo", enlace: "/cancion/cuarteto/4" },
+    { id: 5, name: "No Llora", enlace: "/cancion/cuarteto/5" },
+    { id: 6, name: "Mario Neta", enlace: "/cancion/cuarteto/6" },
+    { id: 7, name: "Algo Mejor Que Hacer", enlace: "/cancion/cuarteto/7" },
+    { id: 8, name: "Cómo Pasa el Tiempo", enlace: "/cancion/cuarteto/8" }
+];
+
+export const brunoCanciones = [
+    { id: 1, name: "Just the Way You Are", enlace: "/cancion/bruno/1" },
+    { id: 2, name: "Uptown Funk", enlace: "/cancion/bruno/2" },
+    { id: 3, name: "Locked Out of Heaven", enlace: "/cancion/bruno/3" },
+    { id: 4, name: "When I Was Your Man", enlace: "/cancion/bruno/4" },
+    { id: 5, name: "24K Magic", enlace: "/cancion/bruno/5" },
+    { id: 6, name: "Grenade", enlace: "/cancion/bruno/6" },
+    { id: 7, name: "The Lazy Song", enlace: "/cancion/bruno/7" },
+    { id: 8, name: "That's What I Like", enlace: "/cancion/bruno/8" }
+];
+
+export const moratCanciones = [
+    { id: 1, name: "Cómo Te Atreves", enlace: "/cancion/morat/1" },
+    { id: 2, name: "A Dónde Vamos", enlace: "/cancion/morat/2" },
+    { id: 3, name: "Besos En Guerra", enlace: "/cancion/morat/3" },
+    { id: 4, name: "Mi Vida Entera", enlace: "/cancion/morat/4" },
+    { id: 5, name: "No Se Va", enlace: "/cancion/morat/5" },
+    { id: 6, name: "Porfa No Te Vayas", enlace: "/cancion/morat/6" },
+    { id: 7, name: "Cuando Nadie Ve", enlace: "/cancion/morat/7" },
+    { id: 8, name: "Bajo La Mesa", enlace: "/cancion/morat/8" }
+];

@@ -1,42 +1,163 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+main{
   padding: 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navMenu{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0.8rem 0;
+  background-color: aliceblue;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NavDiv{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Logo{
+  font-size: 2rem;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.card {
-  padding: 2em;
+.NavDiv ul{
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
 }
 
-.read-the-docs {
-  color: #888;
+.NavDiv li{
+  list-style: none;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+.NavDiv a{
+  color: #145556;
+}
+
+/* ----- PRACTICANDO CON EL HAS Y NOT -----*/
+
+/* Cuando el NAV tiene un li en hover,
+   todos los li que NO son el que está en hover se ven afectados */
+.NavDiv:has(li:hover) li:not(:hover) {
+  opacity: 0.4;
+  filter: blur(0.3px);
+  transform: scale(0.9);
+}
+
+/* El li en hover se destaca */
+.NavDiv li:hover {
+  transform: scale(1.2);
+  text-decoration: overline;
+}
+
+/*El primer elemento es el contendor padre, dice que si en el contenedor padre hay un li en hover que es el segundo hijo directo entonces todos los li en hover van a recibir los cambios*/
+.NavDiv:has(li:nth-child(2):hover) li:hover { 
+  background-color: #145556;
+}
+
+/* Aqui el primer elemento es el contenedor padre, si este tiene un li que es el ultimo hijo en hover, todos los li crencen*/
+.NavDiv:has(li:last-child:hover) li{
+  font-size: 3rem;
+}
+
+.NavDiv li:hover a {
+  color: #ff6b6b;
+}
+
+.Card{
+  background-color: #0e0630;
+  max-width: 30rem;
+  border-radius: 30px;
+}
+
+.Card div{
+  padding: 0 1rem;
+}
+
+.Card img{
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.Card ul{
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.Card ul::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+}
+
+.cancion{
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+}
+
+.cancion button{
+  background-color: green;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancion svg{
+  color: aliceblue;
+}
+
+/*Si en la lista de canciones unos de los botones esta en hover, los demas se apagaran*/
+.Card ul:has(button:hover) button:not(:hover){
+  background-color: #145556;
+  opacity: 0.5;
+}
+
+/*Si no hay ninguna card en hove, las cartas que no estan en hover se ponen grises*/
+main:not(.Card:hover) .Card:not(:hover){
+  filter: saturate(0%);
+  transition: 0.5s;
+}
+
+/*Si hay una carta en hover, las demas cartas mantienen el gris*/
+main:has(.Card:hover) .Card:not(:hover){
+  filter: saturate(0%);
+  transition: 0.5s;
+}
+
+/*Cuando una carta tiene hover, cambia a sus colores*/
+.Card:hover{
+  filter: saturate(100%);
+  transition: 0.5s;
 }
