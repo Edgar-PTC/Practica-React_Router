@@ -6,6 +6,7 @@ import Nav from "./components/Nav"
 import Home from "./pages/Home"
 import AboutMe from "./pages/AboutMe"
 import Calcu from "./pages/Calculadora"
+import Opinions from "./pages/Opinions"
 
 //La funcion principal indispensable
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/aboutme" element={<AboutMe/>}/>
           <Route path="/calcu" element={<Calcu/>}/>
+          <Route path="/opin" element={<Opinions/>}/>
         </Routes>
       </Router>
     </>

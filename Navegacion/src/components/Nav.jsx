@@ -21,6 +21,11 @@ const Nav = () => {
                             Calculadora
                         </a>
                     </li>
+                    <li>
+                        <a href="/opin">
+                            Opinions
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
