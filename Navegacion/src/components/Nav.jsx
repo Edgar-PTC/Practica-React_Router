@@ -17,8 +17,8 @@ const Nav = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/">
-                            Home
+                        <a href="/calcu">
+                            Calculadora
                         </a>
                     </li>
                 </ul>

@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router"
 import Nav from "./components/Nav"
 import Home from "./pages/Home"
 import AboutMe from "./pages/AboutMe"
+import Calcu from "./pages/Calculadora"
 
 //La funcion principal indispensable
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/aboutme" element={<AboutMe/>}/>
+          <Route path="/calcu" element={<Calcu/>}/>
         </Routes>
       </Router>
     </>

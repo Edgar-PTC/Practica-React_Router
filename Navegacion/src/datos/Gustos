@@ -1,0 +1,25 @@
+export const GustoMusical = [
+    {name: "Cuarteto De Nos"},
+    {name: "Morat"},
+    {name: "Grupo Frontera"},
+    {name: "Steven Universe"},
+    {name: "Missasinfonia"}
+]
+
+export const GustosDeportivos = [
+    {name: "Basketball"},
+    {name: "Natacion"},
+    {name: "Voleyball"},
+    {name: "Ciclismo"},
+    {name: "Senderismo"}
+];
+
+export const GustosComida = [
+    {name: "Pupusas"},
+    {name: "Caren a la plancha"},
+    {name: "Ensalada de coditos"},
+    {name: "Comida Mexicana"},
+    {name: "Hamburguesa"},
+    {name: "Pequeño Cesar"},
+    {name: "Sopa de pollo"}
+]

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Boton from "./Boton.jsx"
+import Boton from "./BotonMusic.jsx"
 
 const Card = ({imagen, titulo, descrip, lista}) => {
     const [canciones, setCanciones] = useState(lista);
