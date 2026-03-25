@@ -26,6 +26,11 @@ const Nav = () => {
                             Opinions
                         </a>
                     </li>
+                    <li>
+                        <a href="/todolist">
+                            ToDoList
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>

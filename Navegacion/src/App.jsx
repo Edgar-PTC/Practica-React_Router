@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import AboutMe from "./pages/AboutMe"
 import Calcu from "./pages/Calculadora"
 import Opinions from "./pages/Opinions"
+import ToDoList from "./pages/ToDoList"
 
 //La funcion principal indispensable
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/aboutme" element={<AboutMe/>}/>
           <Route path="/calcu" element={<Calcu/>}/>
           <Route path="/opin" element={<Opinions/>}/>
+          <Route path="/todolist" element={<ToDoList/>}/>
         </Routes>
       </Router>
     </>
